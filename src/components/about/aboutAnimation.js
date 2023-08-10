@@ -12,6 +12,6 @@ export function animateAbout (element, origin, interval) {
         interval: interval,
         mobile: true,
         easing: 'ease-out',
-        viewFactor: 0.8,
+        viewFactor: 0.6,
     });
 }
