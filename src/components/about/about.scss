@@ -1,0 +1,376 @@
+$color-primary: #07076b;
+$color-secondary: #f94144;
+$third-color: #0096f4;
+$fourth-color: #254dda;
+
+.about-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 3rem 3rem 1rem;
+    gap: 3rem;
+
+    .about-text {
+        text-align: center;
+
+        h1 {
+            color: #07076b;
+            font-size: 3.2rem;
+            word-spacing: 2px;
+
+            span {
+                color: $fourth-color;
+            }
+        }
+
+        h3 {
+            margin-bottom: 2rem;
+            font-weight: 600;
+            word-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        .btn-about {
+            background-color: $fourth-color;
+            color: #fff;
+            border-style: none;
+            outline: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: .6rem 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
+    .about-graphic {
+        display: flex;
+
+        img {
+            mix-blend-mode: darken;
+            width: 20rem;
+        }
+    }
+}
+
+@media (max-width:63rem) {
+
+    .about-container {
+
+        .about-graphic {
+            img {
+                width: 16rem;
+            }
+        }
+    }
+}
+
+@media (max-width:48rem) {
+
+    .about-container {
+        margin: 3rem 1.3rem;
+
+        .about-text {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        .about-graphic {
+
+            img {
+                width: 13rem;
+                height: 12rem;
+            }
+        }
+    }
+}
+
+@media (max-width:38.2rem) {
+
+    .about-container {
+
+        .about-text {
+            h1 {
+                font-size: 2.6rem;
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+
+        .about-graphic {
+            img {
+                width: 8.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:25rem) {
+
+    .about-container {
+        margin: 3.5rem 1rem;
+
+        .about-text {
+
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: justify;
+            }
+        }
+
+        .about-graphic {
+
+            img {
+                width: 7.5rem;
+                height: 8rem;
+            }
+        }
+    }
+}
+
+@media (max-width:21rem) {
+
+    .about-container {
+        margin: 2rem 1rem;
+
+        .about-text {
+
+            h1 {
+                font-size: 1.9rem;
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+        }
+
+        .about-graphic {
+            img {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 80rem) {
+
+    .about-container {
+        margin: 4.5rem 2rem;
+
+        .about-graphic {
+
+            img {
+                width: 25rem;
+            }
+        }
+    }
+}
+
+//Styling the faq section
+
+.main-faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .faq-heading {
+        font-size: 2.5rem;
+        text-align: center;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(to top,
+                $fourth-color,
+                $third-color,
+            );
+    }
+}
+
+
+.faq-container {
+
+    max-width: 100%;
+
+    .faq-wrapper {
+        width: 40rem;
+        margin: .5rem auto;
+        border-radius: 5px;
+        box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, .2);
+
+        &.open {
+            border-top: 2px solid #254dda;
+        }
+
+        .top {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .question {
+                font-size: 1.2rem;
+                margin-left: 2rem;
+                font-weight: 500;
+
+                &.open {
+                    color: $fourth-color;
+                }
+            }
+
+            .icon {
+                font-size: 1.5rem;
+                margin-right: 2rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: $fourth-color;
+                }
+            }
+        }
+
+        .bottom {
+
+            margin-inline: 2rem;
+            margin-top: -1.5rem;
+            display: none;
+
+            .answer {
+                font-size: 1.1rem;
+                padding-bottom: 2rem;
+                text-align: justify;
+                line-height: 1.3;
+            }
+
+            &.open {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width:44rem) {
+
+    .main-faq {
+
+        .faq-heading {
+            font-size: 1.9rem;
+        }
+
+        .faq-container {
+            .faq-wrapper {
+                width: 32rem;
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 34.5rem) {
+
+    .main-faq {
+
+        .faq-heading {
+            font-size: 1.7rem;
+            padding-inline: 1rem;
+        }
+
+        .faq-container {
+
+            .faq-wrapper {
+                width: 26rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 28rem) {
+
+    .main-faq {
+
+        .faq-heading {
+            font-size: 1.7rem;
+        }
+
+        .faq-container {
+            .faq-wrapper {
+                width: 24rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 24.5rem) {
+
+    .main-faq {
+
+        .faq-heading {
+            font-size: 1.7rem;
+        }
+
+        .faq-container {
+            .faq-wrapper {
+                width: 21.3rem;
+
+                .bottom {
+
+                    .answer {
+                        font-size: 1rem;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 22rem) {
+
+    .main-faq {
+
+        .faq-container {
+
+            .faq-wrapper {
+                width: 18.5rem;
+    
+                .top {
+                    .question {
+                        font-size: 1rem;
+                        margin-left: 1rem;
+                    }
+
+                    .icon {
+                        margin-right: 1rem;
+                    }
+                }
+
+                .bottom {
+                    margin-inline: 1rem;
+
+                    .answer {
+                        font-size: 1rem;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+}
