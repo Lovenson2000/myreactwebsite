@@ -11,6 +11,10 @@ $fourth-color: #254dda;
     align-items: center;
     justify-content: space-between;
     box-shadow: .3rem .3rem 3rem rgba(2, 2, 47, .2);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: aliceblue;
 
     .logo-box {
         margin-left: 4rem;
@@ -51,8 +55,6 @@ $fourth-color: #254dda;
 @media (max-width: 45rem) {
 
     .header {  
-        z-index: 1;
-        position: relative;
 
         .logo-box {
             margin-left: 2.5rem;

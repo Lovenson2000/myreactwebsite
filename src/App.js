@@ -9,7 +9,7 @@ import Contact from './components/contact/Contact.js';
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className='app'>
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />

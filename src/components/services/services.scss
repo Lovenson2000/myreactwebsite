@@ -5,7 +5,8 @@ $fourth-color: #254dda;
 
 .services-container {
     text-align: center;
-    margin: 4rem auto;
+    margin: 10rem auto;
+    margin-bottom: 3rem;
     position: relative;
 
     .services-top {
@@ -17,13 +18,14 @@ $fourth-color: #254dda;
 
         h3 {
             font-size: 2rem;
+            padding-inline: 1rem;
         }
     }
 
     .pop-up {
         position: absolute;
-        top: 12rem;
-        left: 20%;
+        top: 7rem;
+        left: 3%;
         width: 20rem;
         padding: .4rem .2rem;
         color: $color-primary;
@@ -158,6 +160,11 @@ $fourth-color: #254dda;
                 font-size: 1.6rem;
             }
         }
+        .pop-up {
+            top: 5rem;
+            left: 7%;
+            width: 16rem;
+        }
 
         .bottom {
 
@@ -209,6 +216,11 @@ $fourth-color: #254dda;
                 font-size: 1.4rem;
             }           
         }
+        .pop-up {
+            top: 5rem;
+            left: 14%;
+            width: 19rem;
+        }
 
         .bottom {
             flex-direction: column;
@@ -245,8 +257,8 @@ $fourth-color: #254dda;
         .pop-up {
             position: absolute;
             top: 10%;
-            left: 9%;
-            width: 16rem;
+            left: 10%;
+            width: 17rem;
 
             div {
                 margin-left: .1rem;
@@ -287,6 +299,7 @@ $fourth-color: #254dda;
 
 @media(max-width:24rem) {
     .services-container {
+        margin-top: 8.5rem;
 
         .services-top {
 
@@ -322,6 +335,7 @@ $fourth-color: #254dda;
 
 @media(max-width:22rem) {
     .services-container {
+        margin-top: 8rem;
 
         .services-top {
 
@@ -367,7 +381,7 @@ $fourth-color: #254dda;
             .card {
                 width: 15.6rem;
 
-                img{
+                img {
                     height: 9.5rem;
                 }          
             }
