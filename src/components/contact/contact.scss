@@ -1,14 +1,200 @@
-
 $color-primary: #07076b;
 $color-secondary: #f94144;
 $third-color: #0096f4;
 $fourth-color: #254dda;
 
 .contact-container {
-    color: $fourth-color;
-    font-size: 3rem;
-    font-weight: 700;
+    width: 100%;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
     text-align: center;
-    margin: 6rem 1rem;
+
+    .contact-heading{
+
+        font-size: 2.3rem;
+        font-weight: 600;
+        padding-inline: .6rem;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        display: inline-block;
+        background-image: linear-gradient(to right bottom,
+                $color-primary,
+                $third-color );
+    }
+
+    .form {
+        width: 35rem;
+        border-radius: 4px;
+        box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, .2);
+        margin: 1rem auto;
+        padding: .5rem;
+        background-color: white;
+
+        .form-heading {
+
+            font-size: 1.8rem;
+            color: $color-primary;
+            margin-bottom: -1rem;
+
+        }
+
+        .field-wrapper {
+
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto;
+            width: 50%;
+
+
+            h3 {
+                font-size: 1.1rem;
+                color: $fourth-color;
+            }
+
+            input {
+
+                padding: .5rem;
+                outline: none;
+                border-radius: 8px;
+                color: $color-primary;
+                border-style: none;
+                font-size: 1rem;
+                font-weight: 500;
+                background-color: aliceblue;
+                box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .2);
+
+                &:focus {
+                    border-bottom: solid $fourth-color;
+                }
+
+                &::placeholder {
+                    color: $color-primary;
+                }
+            }
+
+            select {
+
+                color: $color-primary;
+                padding: 2.5rem;
+                height: 2rem;
+                border: 1px transparent;
+                border-radius: 40px;
+                outline: none;
+                background-color: aliceblue;
+                font-size: 1rem;
+                font-weight: 500;
+
+                &:focus {
+                    border-bottom: solid $fourth-color;
+                }
+            }
+
+            textarea {
+                height: 6rem;
+                outline: none;
+                border: none;
+                background: aliceblue;
+                resize: none;
+                padding: 1rem;
+                font-size: 1rem;
+                font-weight: 500;
+                color: $color-primary;
+                box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .2);
+
+                &::placeholder {
+                    color: $color-primary;
+                }
+
+                &:focus {
+                    border-bottom: solid $fourth-color;
+                }
+            }
+
+        }
+        & .btn-submit {
+            margin: 1rem;
+            width: 50%;    
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            background-color: $fourth-color;
+            color: white;
+            padding-block: .5rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 45rem) {
+
+    .contact-container {
+
+        .form {
+            width: 25rem;
+        }
+    }
+ 
+}
+
+@media (max-width: 30rem) {
+
+    .contact-container {
+
+        .form {
+            width: 21.5rem;
+
+            .field-wrapper {
+                margin: .5rem auto;
+                width: 80%;
     
+                h3 {
+                    font-size: 1.1rem;
+                    color: $fourth-color;
+                }
+            }
+
+            & .btn-submit {
+                width: 80%;     
+            }
+        }
+    }
+}
+
+@media (max-width: 24rem) {
+
+    .contact-container {
+
+        .form {
+            width: 19rem;
+
+            .field-wrapper {
+                margin: .5rem auto;
+                width: 85%;
+            }
+            & .btn-submit {
+                width: 85%;     
+            }
+
+        }
+    }
+}
+
+@media (max-width: 22rem) {
+
+    .contact-container {
+
+        .form {
+            width: 16.7rem;
+
+            .field-wrapper {
+                margin: .5rem auto;
+                width: 90%;
+            }
+            & .btn-submit {
+                width: 90%;     
+            }
+
+        }
+    }
 }
