@@ -111,9 +111,10 @@ $fourth-color: #254dda;
             }
 
         }
+
         & .btn-submit {
             margin: 1rem;
-            width: 50%;    
+            width: 50%;
             outline: none;
             border: none;
             border-radius: 4px;
@@ -133,7 +134,7 @@ $fourth-color: #254dda;
             width: 25rem;
         }
     }
- 
+
 }
 
 @media (max-width: 30rem) {
@@ -146,7 +147,7 @@ $fourth-color: #254dda;
             .field-wrapper {
                 margin: .5rem auto;
                 width: 80%;
-    
+
                 h3 {
                     font-size: 1.1rem;
                     color: $fourth-color;
@@ -154,7 +155,7 @@ $fourth-color: #254dda;
             }
 
             & .btn-submit {
-                width: 80%;     
+                width: 80%;
             }
         }
     }
@@ -171,8 +172,9 @@ $fourth-color: #254dda;
                 margin: .5rem auto;
                 width: 85%;
             }
+
             & .btn-submit {
-                width: 85%;     
+                width: 85%;
             }
 
         }
@@ -190,10 +192,61 @@ $fourth-color: #254dda;
                 margin: .5rem auto;
                 width: 90%;
             }
+
             & .btn-submit {
-                width: 90%;     
+                width: 90%;
             }
 
+        }
+    }
+}
+
+.alert-container {
+
+    width: 23rem;
+    padding: 1rem;
+    color: $color-primary;
+    background: white;
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+
+    &.open {
+        display: block;
+    }
+
+    h3 {
+        font-weight: 500;
+    }
+
+    .details {
+        p {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+    }
+
+    span {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 30rem) {
+    .alert-container {
+        width: 15.5rem;
+
+        .details {
+            p {
+                font-size: 1rem;
+                text-align: justify;
+            }
         }
     }
 }
