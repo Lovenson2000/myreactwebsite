@@ -65,7 +65,7 @@ $fourth-color: #254dda;
         }
 
         flex-shrink: 1;
-        
+
     }
 
     .hero-right {
@@ -74,7 +74,7 @@ $fourth-color: #254dda;
         img {
             width: 28rem;
             mix-blend-mode: darken;
-                    
+
         }
     }
 }
@@ -117,6 +117,7 @@ $fourth-color: #254dda;
 
     .hero-container {
         margin-top: 3rem;
+
         .hero-left {
             margin-inline: 1rem;
 
@@ -135,7 +136,7 @@ $fourth-color: #254dda;
 
         .hero-right {
             margin-inline: 1rem;
-            
+
             img {
                 width: 24rem;
             }
@@ -152,7 +153,7 @@ $fourth-color: #254dda;
         gap: 2rem;
 
         .hero-left {
-            text-align: center;       
+            text-align: center;
             margin-inline: 1rem;
 
             h1 {
@@ -173,7 +174,7 @@ $fourth-color: #254dda;
 
         .hero-right {
             margin-inline: 1rem;
-            
+
             img {
                 width: 26rem;
 
@@ -192,16 +193,17 @@ $fourth-color: #254dda;
 
         .hero-left {
             margin: 0;
-             h1 {
+
+            h1 {
                 font-size: 2.8rem;
                 text-align: center;
 
                 span {
                     font-size: 2.8rem;
                 }
-               
+
             }
-            
+
             h3 {
                 font-size: 1.4rem;
             }
@@ -214,7 +216,7 @@ $fourth-color: #254dda;
         }
 
         .hero-right {
-            
+
             img {
                 width: 23rem;
 
@@ -232,14 +234,15 @@ $fourth-color: #254dda;
 
         .hero-left {
             margin: 0;
-             h1 {
+
+            h1 {
                 font-size: 2.5rem;
 
                 span {
                     font-size: 2.5rem;
-                } 
+                }
             }
-            
+
             h3 {
                 font-size: 1.4rem;
             }
@@ -253,7 +256,7 @@ $fourth-color: #254dda;
         }
 
         .hero-right {
-            
+
             img {
                 width: 21.2rem;
 
@@ -274,9 +277,9 @@ $fourth-color: #254dda;
 
                 span {
                     font-size: 2.1rem;
-                } 
+                }
             }
-            
+
             h3 {
                 font-size: 1.25rem;
             }
@@ -292,6 +295,89 @@ $fourth-color: #254dda;
         .hero-right {
             img {
                 width: 18rem;
+            }
+        }
+    }
+}
+
+.partners-container {
+
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .heading {
+        text-align: center;
+        font-size: 3rem;
+        color: $fourth-color;
+        padding-block: .3rem;
+        position: relative;
+
+        span {
+            position: absolute;
+            content: "";
+            width: 6rem;
+            background-color: $color-secondary;
+            height: 4px;
+            left: 46%;
+            bottom: 0;
+            font-weight: 500;
+        }
+
+    }
+
+}
+
+.slider {
+
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 5rem;
+    margin: 1rem;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, .2);
+
+    .slide {
+
+        display: inline-block;
+        animation: animate 10s linear infinite;
+
+        img {
+            width: 4rem;
+            margin: 1rem 3rem;
+            
+            aspect-ratio: 2/2;
+            mix-blend-mode: darken;
+
+            &:hover {
+                filter: grayscale(80%);
+            }
+        }
+    }
+
+    @keyframes animate {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    &:hover {
+        animation-play-state: paused;
+        -webkit-animation-play-state: paused;
+
+    }
+}
+
+@media (max-width:30rem) {
+    .slider {
+        .slide {
+            img {
+                width: 2.9rem;
+                margin: 1rem 2.4rem;
             }
         }
     }

@@ -12,5 +12,6 @@ export function animateHome (element, origin) {
         interval: 400,
         mobile: true,
         easing: 'ease-out',
+        viewFactor: 0.8,
     });
 }
