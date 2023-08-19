@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar.js';
+import Navbar from './components/navbar/Navbar.js';
 import Home from './components/home/Home.js';
 import About from './components/about/About.js';
 import Services from './components/services/Services.js';
 import Contact from './components/contact/Contact.js';
+import Footer from './components/footer/Footer.js'
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
                     <Route path="/services" element={<Services />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
+                <Footer />
             </div>
         </Router>
     );

@@ -1,0 +1,221 @@
+$color-primary: #02022b;
+$color-secondary: #f94144;
+$third-color: #0096f4;
+$fourth-color: #3561fe;
+
+.footer {
+
+    max-width: 100%;
+    padding: 2rem 3rem;
+    border-top-left-radius: 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    place-content: center;
+    background-color: #00308b;
+
+    .footer-left {
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: rgb(158, 175, 189);
+            font-weight: 700;
+        }
+
+        p {
+
+            font-size: 1.1rem;
+            line-height: 1.1;
+            word-spacing: 3px;
+
+        }
+
+    }
+
+    .footer-links-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: -1rem;
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: rgb(158, 175, 189);
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: -2rem;
+
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.1rem;
+                padding: .5rem .2rem;
+                color: white;
+
+            }
+        }
+
+    }
+
+    .footer-partners {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 1.5rem;
+            color: rgb(158, 175, 189);
+        }
+
+        .partners-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.1rem;
+                padding: .5rem .2rem;
+                color: white;
+            }
+        }
+    }
+
+    .suscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        gap: .5rem;
+
+
+        input {
+            min-width: 15rem;
+            border-radius: 4px;
+            padding: .8rem .3rem;
+            outline: none;
+            border: none;
+            background-color: aliceblue;
+            font-size: 1.05rem;
+            color: #00308b;
+            font-weight: 500;
+
+            &::placeholder {
+                color: #00308b;
+                font-weight: 500;
+            }
+
+
+        }
+
+        .suscribe-btn {
+            width: 12rem;
+            border-radius: 4px;
+            outline: none;
+            border: none;
+            font-size: 1.1rem;
+            background-color: $fourth-color;
+            color: white;
+            padding: .8rem 1.4rem;
+            cursor: pointer;
+
+        }
+    }
+}
+
+@media (max-width: 57.9rem) {
+
+    .footer {
+        max-width: 100%;
+        padding: 3rem 4rem;
+        border-top-left-radius: 8rem;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        column-gap: .1rem;
+
+        .footer-links-container {
+            ul {
+
+                a {
+                    text-transform: uppercase
+                }
+            }
+        }
+
+        .footer-partners {
+
+            display: flex;
+            flex-direction: column;
+            margin-left: -1rem;
+
+            .partners-wrapper {
+                a {
+                    margin-left: -1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 40rem) {
+
+    .footer {
+        border-top-left-radius: 6rem;
+        padding: .2rem 1rem;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: -1rem;
+
+        .suscribe {
+            gap: .4rem;
+
+            input {
+                min-width: 7rem;
+                padding: .8rem .3rem;
+                font-size: 1rem;
+            }
+
+            .suscribe-btn {
+
+                width: 8rem;
+                font-size: 1rem;
+                padding: .8rem 1.2rem;  
+
+            }
+        }
+    }
+}
+
+@media (max-width: 22rem) {
+
+    .footer {
+
+        .suscribe {
+
+            input {
+                min-width: 5rem;
+                font-size: .9rem;
+            }
+
+            .suscribe-btn {
+
+                width: 6.5rem; 
+            }
+        }
+    }
+}
